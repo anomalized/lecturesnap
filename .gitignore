@@ -1,0 +1,35 @@
+node_modules
+.next
+.env
+.env.local
+.env*.local
+.env.*.local
+npm-debug.log*
+.DS_Store
+*.pem
+out
+build
+*.next/*
+*/next/*
+
+# Sensitive files
+credentials.json
+*.key
+*.cert
+*.p12
+*.pfx
+.aws/
+.ssh/
+
+# IDE local settings
+.vscode/settings.json
+.idea/
+
+# Logs
+logs/
+*.log
+yarn-error.log*
+
+# OS files
+Thumbs.db
+.next/
