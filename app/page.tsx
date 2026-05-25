@@ -358,7 +358,8 @@ export default function Home() {
                 {/* Notes */}
                 {(tab === "notes" || tab === "both") && r.notes && (
                   <NotesDisplay
-                    notes={r.notes as Parameters<typeof NotesDisplay>[0]["notes"]}
+                    
+                    notes={r.notes as unknown as Parameters<typeof NotesDisplay>[0]["notes"]}
                     subject={(r.subject as string) || ""}
                     title={(r.title as string) || ""}
                     difficulty_level={(r.difficulty_level as string) || "Intermediate"}
